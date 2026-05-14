@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; background: #0d1117; color: #e6edf3; font-family: system-ui, sans-serif; }
+
+.code-area {
+  background: #161b22;
+  border: 1px solid rgba(48,54,61,1);
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  color: #e6edf3;
+  width: 100%;
+  resize: vertical;
+  min-height: 200px;
+}
+
+.btn-green {
+  background: #238636;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+.btn-green:hover { background: #2ea043; }
+.btn-green:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.panel {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #238636, #58a6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
